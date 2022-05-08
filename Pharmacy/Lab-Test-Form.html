@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link href="./Lab-test-form.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div >
+        <img src="./Sources/Lab-Test/lab-test.jpg" alt="labtest">
+        <form id="lab-test"> 
+            <h3>1.Patient Contact Details</h3>
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Patient id if exist"><br>
+            <input type="number" placeholder="Contact Number" min="6000000000" max="9999999999" required>
+            <input type="email" placeholder="Email">
+            <br />
+            <h3>2.Address</h3>
+            <input type="text" placeholder="House Number" required>
+            <input type="text" placeholder="Street" required><br>
+            <input type="text" placeholder="Area" required><br>
+            <h4>District</h4>
+            <select >
+                <option>Choose</option>
+                <option>Bengaluru</option>
+                <option>Shimoga</option>
+            </select><br>
+            <h3>3.Choose Test Type</h3>
+            <h6>(Check atleast one box without fail)</h6>
+            <div class="checkbox">
+            <input type="checkbox" id="CBC">
+            <label class="container">CBC</label><br>
+            <input type="checkbox" id="Complete Urine">
+            <label class="container">Complete Urine</label><br>
+            <input type="checkbox" id="Lipid Profile">
+            <label class="container">Lipid Profile</label><br>
+            <input type="checkbox" id="Thyroid Stimulating Hormone(TSH)">
+            <label class="container">Thyroid Stimulating Hormone(TSH)</label><br>
+            <input type="checkbox" id="Glucose Test">
+            <label class="container">Glucose Test</label><br>
+
+            <h3>4.Do you want a hard copy of the report also?</h3>
+            <input type="radio" id="yes" name="option">
+            <label class="container">yes</label><br>
+            <input type="radio" id="no" name="option">
+            <label class="container">no</label>
+        </div>
+
+            <h3>5.Do you want a hard copy of the report also?</h3>
+            <input type="date">
+            <input type="time"><br>
+
+            <button >Reset</button>
+            <button>Submit</button>
+
+             
+
+
+        </form>  
+       
+    </div>
+    
+    
+
+</body>
+
+</html>
